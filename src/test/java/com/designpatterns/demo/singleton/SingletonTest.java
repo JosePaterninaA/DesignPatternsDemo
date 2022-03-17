@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import singleton.Singleton;
 
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class SingletonTest {
 
     @Test
@@ -13,4 +17,7 @@ public class SingletonTest {
 
         Assertions.assertEquals(instance1, instance2);
     }
+
+
+
 }
